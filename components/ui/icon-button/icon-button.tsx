@@ -27,6 +27,7 @@ const IconButton = ({
 	variant = "solid",
 	loading = false,
 	radius = "medium",
+	...props
 }: Props) => {
 	const colorValue =
 		(styles[`variant-${variant}`] as VariantProps)?.color ??
@@ -34,12 +35,14 @@ const IconButton = ({
 
 	return (
 		<Pressable
+			testID="icon-button"
 			style={[
 				styles.base,
 				styles[`size-${size}`],
 				styles[`variant-${variant}`],
 				styles[`radius-${radius}`],
 			]}
+			{...props}
 		>
 			{loading && (
 				<Suspense fallback="">

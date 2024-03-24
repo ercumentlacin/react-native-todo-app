@@ -44,6 +44,7 @@ const Loading = ({ children, colorValue }: Props) => {
 			<AntDesign
 				{...{ ...children.props, color: colorValue }}
 				name="loading1"
+				testID="icon-button-loading"
 			/>
 		</Animated.View>
 	);
