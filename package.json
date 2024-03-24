@@ -13,13 +13,15 @@
 		"lint": "biome lint .",
 		"lint:fix": "biome check --apply-unsafe .",
 		"prepare": "husky",
-		"commitlint": "commitlint --edit"
+		"commitlint": "commitlint --edit",
+		"fix:all": "npm run format:fix && npm run lint:fix"
 	},
 	"jest": {
 		"preset": "jest-expo",
 		"setupFilesAfterEnv": ["./test/jest-setup.ts"]
 	},
 	"dependencies": {
+		"@expo-google-fonts/inter": "^0.2.3",
 		"@expo/vector-icons": "^14.0.0",
 		"@react-navigation/native": "^6.0.2",
 		"expo": "~50.0.14",
