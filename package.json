@@ -16,7 +16,8 @@
 		"commitlint": "commitlint --edit"
 	},
 	"jest": {
-		"preset": "jest-expo"
+		"preset": "jest-expo",
+		"setupFilesAfterEnv": ["./test/jest-setup.ts"]
 	},
 	"dependencies": {
 		"@expo/vector-icons": "^14.0.0",
@@ -42,6 +43,8 @@
 		"@biomejs/biome": "1.6.2",
 		"@commitlint/cli": "^19.2.1",
 		"@commitlint/config-conventional": "^19.1.0",
+		"@testing-library/react-native": "^12.4.4",
+		"@types/jest": "^29.5.12",
 		"@types/react": "~18.2.45",
 		"husky": "^9.0.11",
 		"jest": "^29.2.1",

@@ -13,6 +13,6 @@
 		}
 	},
 	"files": {
-		"ignore": ["node_modules", ".expo", "yarn.lock"]
+		"ignore": ["node_modules", ".expo", "yarn.lock", "coverage"]
 	}
 }

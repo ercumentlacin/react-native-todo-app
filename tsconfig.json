@@ -5,7 +5,8 @@
 		"module": "ESNext",
 		"paths": {
 			"@/*": ["./*"]
-		}
+		},
+		"types": ["jest", "node"]
 	},
 	"include": [
 		"**/*.ts",
